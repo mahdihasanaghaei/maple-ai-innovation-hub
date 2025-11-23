@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import Logo from "/maple-Ai.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,11 +29,17 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-2xl font-bold text-white">M</span>
+              <img
+                src={Logo}
+                alt="Logo"
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
             <div className="hidden md:block">
               <span className="text-xl font-bold text-gradient">Maple AI</span>
-              <p className="text-xs text-muted-foreground">Innovation Foundation</p>
+              <p className="text-xs text-muted-foreground">
+                Innovation Foundation
+              </p>
             </div>
           </Link>
 

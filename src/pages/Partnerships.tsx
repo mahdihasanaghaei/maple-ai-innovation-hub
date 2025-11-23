@@ -31,24 +31,14 @@ const Partnerships = () => {
   ];
 
   const partnerLogos = [
-    "17.png",
-    "18.png",
-    "3.png",
-    "4.png",
-    "1.jpg",
-    "2.jpg",
-    "5.png",
-    "6.png",
     "7.png",
-    "8.jpg",
-    "9.jpg",
-    "10.jpg",
-    "11.jpg",
+    "1.jpg",
+    "5.png",
     "12.png",
     "13.png",
     "14.png",
+    "6.png",
     "15.png",
-    "16.png",
   ];
 
   return (
