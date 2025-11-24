@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Building2, University, Rocket, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Partnerships = () => {
   const partnerCategories = [
@@ -109,16 +110,16 @@ const Partnerships = () => {
                 institutions shaping the future of AI
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/collaborate" className="inline-block">
+                <Link to="/collaborate" className="inline-block">
                   <button className="px-8 py-3 bg-gradient-primary text-white rounded-lg font-semibold hover:opacity-90 transition-opacity">
                     Apply for Partnership
                   </button>
-                </a>
-                <a href="/contact" className="inline-block">
+                </Link>
+                <Link to="/contact" className="inline-block">
                   <button className="px-8 py-3 border border-border rounded-lg font-semibold hover:bg-muted transition-colors">
                     Contact Our Team
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
