@@ -57,9 +57,9 @@ const Licensing = () => {
       .send(serviceId, templateId, formData, publicKey)
       .then(() => {
         toast({
-          title: "Application Submitted!",
+          title: "Submission Received.",
           description:
-            "Your application has been sent to info@maple-ai.ca and our team will review it shortly.",
+            "Your information has been sent to info@maple-ai.ca and will be reviewed for nonprofit alignment.",
         });
         // ریست فرم
 
@@ -82,32 +82,34 @@ const Licensing = () => {
   };
 
   const benefits = [
-    "Official recognition from Maple AI Innovation Foundation",
-    "Credibility boost for your institution or organization",
-    "Access to our global network and resources",
-    "Co-branding opportunities on joint initiatives",
-    "Priority invitations to exclusive events",
-    "Technical support and consultation",
+    "Community acknowledgment for alignment with Maple AI’s nonprofit mission",
+    "Participation in nonprofit research and educational initiatives",
+    "Connection with a global network of researchers, educators, and volunteers",
+    "Inclusion in nonprofit and academic community activities",
+    "Invitations to public, nonprofit events and educational programs",
+    "Access to shared, open educational and research resources",
   ];
 
   const steps = [
     {
-      title: "Submit Application",
+      title: "Submit Information",
       description:
-        "Complete the licensing application form with details about your organization",
+        "Share information about your organization and its alignment with nonprofit research or educational goals",
     },
     {
-      title: "Review Process",
+      title: "Alignment Review",
       description:
-        "Our team evaluates your application based on innovation standards",
+        "Our team reviews submissions to ensure alignment with Maple AI’s nonprofit mission",
     },
     {
-      title: "Approval & Agreement",
-      description: "Upon approval, sign the licensing agreement",
+      title: "Community Acknowledgment",
+      description:
+        "Aligned organizations may be acknowledged within relevant nonprofit initiatives",
     },
     {
-      title: "Certification",
-      description: "Receive your official Maple License certificate",
+      title: "Ongoing Participation",
+      description:
+        "Participate in educational, research, and community-driven activities when applicable",
     },
   ];
 
@@ -123,8 +125,8 @@ const Licensing = () => {
               Maple AI <span className="text-gradient">Licensing</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Obtain official recognition and certification from Maple AI
-              Innovation Foundation
+              Learn about Maple AI’s community acknowledgment framework for
+              aligned research and educational initiatives
             </p>
           </div>
 
@@ -135,7 +137,7 @@ const Licensing = () => {
                 <div className="flex items-center space-x-3 mb-6">
                   <Award className="text-primary" size={32} />
                   <h2 className="text-3xl font-bold">
-                    Benefits of Maple License
+                    What Participation Includes
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -156,7 +158,7 @@ const Licensing = () => {
           {/* Process Steps */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Licensing Process
+              Participation Overview
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {steps.map((step, index) => (
@@ -183,7 +185,9 @@ const Licensing = () => {
             <div className="bg-card border border-border rounded-2xl p-8">
               <div className="flex items-center space-x-3 mb-6">
                 <FileText className="text-primary" size={32} />
-                <h2 className="text-3xl font-bold">Apply for Maple License</h2>
+                <h2 className="text-3xl font-bold">
+                  Nonprofit Participation Form
+                </h2>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -282,7 +286,8 @@ const Licensing = () => {
 
                 <div>
                   <Label htmlFor="reason">
-                    Why do you want a Maple License?
+                    How does your organization align with Maple AI’s nonprofit
+                    research or educational mission?
                   </Label>
                   <Textarea
                     id="reason"

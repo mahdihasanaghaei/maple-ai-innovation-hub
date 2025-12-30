@@ -6,10 +6,11 @@ const Awards = () => {
   const awards = [
     {
       type: "Membership",
-      title: "Proud Member of the International Federation of Inventors' Associations (IFIA)",
+      title:
+        "Proud Member of the International Federation of Inventors' Associations (IFIA)",
       icon: Award,
       flagEmoji: "🌐",
-      countryCode: "global"
+      countryCode: "global",
     },
     {
       type: "Gold Medal",
@@ -17,7 +18,7 @@ const Awards = () => {
       country: "European Union",
       icon: Medal,
       flagEmoji: "🇪🇺",
-      countryCode: "eu"
+      countryCode: "eu",
     },
     {
       type: "Gold & Silver Medals",
@@ -25,7 +26,7 @@ const Awards = () => {
       description: "The world's largest invention fair",
       icon: Trophy,
       flagEmoji: "🌍",
-      countryCode: "world"
+      countryCode: "world",
     },
     {
       type: "Gold Medal",
@@ -33,7 +34,7 @@ const Awards = () => {
       country: "Switzerland",
       icon: Medal,
       flagEmoji: "🇨🇭",
-      countryCode: "ch"
+      countryCode: "ch",
     },
     {
       type: "Gold & Silver Medals",
@@ -41,7 +42,7 @@ const Awards = () => {
       country: "Turkey",
       icon: Trophy,
       flagEmoji: "🇹🇷",
-      countryCode: "tr"
+      countryCode: "tr",
     },
     {
       type: "Silver Medal",
@@ -49,7 +50,7 @@ const Awards = () => {
       country: "United Arab Emirates",
       icon: Medal,
       flagEmoji: "🇦🇪",
-      countryCode: "ae"
+      countryCode: "ae",
     },
     {
       type: "Special Award",
@@ -57,14 +58,14 @@ const Awards = () => {
       country: "England",
       icon: Award,
       flagEmoji: "🇬🇧",
-      countryCode: "gb"
+      countryCode: "gb",
     },
     {
       type: "Special Award",
       title: "World Invention Intellectual Property Associations (WIIPA)",
       icon: Award,
       flagEmoji: "🌐",
-      countryCode: "global"
+      countryCode: "global",
     },
     {
       type: "Special Award",
@@ -72,7 +73,7 @@ const Awards = () => {
       country: "European Union",
       icon: Award,
       flagEmoji: "🇪🇺",
-      countryCode: "eu"
+      countryCode: "eu",
     },
     {
       type: "Special Award",
@@ -80,14 +81,14 @@ const Awards = () => {
       country: "France",
       icon: Award,
       flagEmoji: "🇫🇷",
-      countryCode: "fr"
-    }
+      countryCode: "fr",
+    },
   ];
 
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <main className="pt-32 pb-24">
         <div className="container mx-auto px-4">
           {/* Header */}
@@ -96,11 +97,12 @@ const Awards = () => {
               Awards & <span className="text-gradient">Achievements</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-4">
-              Global recognition for scientific excellence and innovation
+              Global recognition for scientific research, education, and ethical
+              innovation
             </p>
             <div className="inline-block bg-primary/10 border border-primary/20 rounded-full px-6 py-3">
               <p className="text-sm text-muted-foreground">
-                🏆 International Hall of Fame
+                🏆 Recognized by International Scientific Associations
               </p>
             </div>
           </div>
@@ -116,19 +118,26 @@ const Awards = () => {
                 <div className="absolute top-0 right-0 text-[120px] opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
                   {award.flagEmoji}
                 </div>
-                
+
                 {/* Content */}
                 <div className="relative z-10">
                   <div className="flex items-start justify-between mb-4">
-                    <award.icon className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                    <award.icon
+                      className="text-primary group-hover:scale-110 transition-transform"
+                      size={32}
+                    />
                     <span className="text-3xl">{award.flagEmoji}</span>
                   </div>
                   <div className="inline-block bg-gradient-primary/20 rounded-full px-3 py-1 mb-3">
-                    <span className="text-xs font-semibold text-primary">{award.type}</span>
+                    <span className="text-xs font-semibold text-primary">
+                      {award.type}
+                    </span>
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{award.title}</h3>
                   {award.description && (
-                    <p className="text-sm text-muted-foreground mb-2">{award.description}</p>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {award.description}
+                    </p>
                   )}
                   {award.country && (
                     <p className="text-sm text-muted-foreground flex items-center gap-2">
@@ -145,8 +154,14 @@ const Awards = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-card border border-primary/20 rounded-2xl p-8 hover-lift">
               <p className="text-lg text-muted-foreground">
-                The medals and awards we have earned are for our <span className="text-primary font-semibold">inventions and innovative products</span> — 
-                representing our commitment to scientific excellence and global collaboration.
+                The medals and recognitions we have earned reflect our
+                contributions to
+                <span className="text-primary font-semibold">
+                  non‑commercial scientific research, education, and open
+                  innovation
+                </span>{" "}
+                — representing our commitment to ethical AI development and
+                global collaboration for public benefit.
               </p>
             </div>
           </div>

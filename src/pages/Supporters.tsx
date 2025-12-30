@@ -3,31 +3,35 @@ import Footer from "@/components/Footer";
 import { Building2, University, Rocket, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Partnerships = () => {
+const Supporters = () => {
   const partnerCategories = [
     {
       icon: University,
       title: "Academic Institutions",
       count: "15+",
-      description: "Leading universities and research centers worldwide",
+      description:
+        "Universities and research centers collaborating on open and non‑commercial AI research",
     },
     {
       icon: Building2,
-      title: "Technology Companies",
+      title: "Nonprofit & Research Organizations",
       count: "20+",
-      description: "Industry leaders in AI and innovation",
+      description:
+        "Independent organizations supporting education, ethics, and public‑interest AI initiatives",
     },
     {
       icon: Rocket,
-      title: "Startups",
+      title: "Community Initiatives",
       count: "30+",
-      description: "Emerging AI ventures in our ecosystem",
+      description:
+        "Grassroots and community‑led projects focused on AI learning and knowledge sharing",
     },
     {
       icon: Globe,
-      title: "International Organizations",
+      title: "International Networks",
       count: "10+",
-      description: "Global innovation networks and federations",
+      description:
+        "Global academic and nonprofit networks advancing responsible AI collaboration",
     },
   ];
 
@@ -51,11 +55,12 @@ const Partnerships = () => {
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Our <span className="text-gradient">Partnerships</span>
+              Our <span className="text-gradient">Collaborations</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Collaborating with world-class institutions and organizations to
-              advance AI innovation
+              Working with academic, nonprofit, and community organizations to
+              advance artificial intelligence for education, research, and
+              public benefit
             </p>
           </div>
 
@@ -83,7 +88,7 @@ const Partnerships = () => {
           {/* Featured Partners */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              Featured Global Partners
+              Collaborating Organizations & Communities
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {partnerLogos.map((logo, index) => (
@@ -104,20 +109,24 @@ const Partnerships = () => {
           {/* Partnership Benefits */}
           <section className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-border rounded-2xl p-12 text-center">
-              <h2 className="text-3xl font-bold mb-6">Become a Partner</h2>
+              <h2 className="text-3xl font-bold mb-6">
+                {" "}
+                Collaborate With Our Community
+              </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Join our global network of innovators, researchers, and
-                institutions shaping the future of AI
+                We welcome academic institutions, nonprofit organizations, and
+                community groups interested in open research, education, and
+                responsible AI initiatives.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/collaborate" className="inline-block">
+                <Link to="/get-involved" className="inline-block">
                   <button className="px-8 py-3 bg-gradient-primary text-white rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                    Apply for Partnership
+                    Get Involved
                   </button>
                 </Link>
                 <Link to="/contact" className="inline-block">
                   <button className="px-8 py-3 border border-border rounded-lg font-semibold hover:bg-muted transition-colors">
-                    Contact Our Team
+                    Contact Us
                   </button>
                 </Link>
               </div>
@@ -131,4 +140,4 @@ const Partnerships = () => {
   );
 };
 
-export default Partnerships;
+export default Supporters;

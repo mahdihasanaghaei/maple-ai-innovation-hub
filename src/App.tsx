@@ -6,12 +6,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
-import Partnerships from "./pages/Partnerships";
+import Supporters from "./pages/Supporters";
 import Board from "./pages/Board";
-import Collaborate from "./pages/Collaborate";
+import GetInvolved from "./pages/GetInvolved";
 import Licensing from "./pages/Licensing";
 import Awards from "./pages/Awards";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermOfUse from "./pages/TermOfUse";
+import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,12 +29,15 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/partnerships" element={<Partnerships />} />
+          <Route path="/supporters" element={<Supporters />} />
           <Route path="/board" element={<Board />} />
-          <Route path="/collaborate" element={<Collaborate />} />
+          <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/licensing" element={<Licensing />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use" element={<TermOfUse />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

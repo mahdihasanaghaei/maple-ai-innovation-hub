@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
-const Collaborate = () => {
+const GetInvolved = () => {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_APPLICATION;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
@@ -85,100 +85,125 @@ const Collaborate = () => {
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Collaboration <span className="text-gradient">Opportunities</span>
+              Get <span className="text-gradient">Involved</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Join our global network and contribute to the future of AI
-              innovation
+              Join our global nonprofit community and contribute to open
+              research, education, and responsible artificial intelligence
+              initiatives.
             </p>
           </div>
 
           {!formType ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Organizational Partnership */}
-              <div className="bg-card border border-border rounded-2xl p-8 hover-lift flex flex-col">
-                <div className="flex flex-col flex-1">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                    <Building className="text-white" size={32} />
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {/* Organizational Partnership */}
+                <div className="bg-card border border-border rounded-2xl p-8 hover-lift flex flex-col">
+                  <div className="flex flex-col flex-1">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
+                      <Building className="text-white" size={32} />
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-4">
+                      Institutional & Nonprofit Collaboration
+                    </h3>
+                    <p className="text-muted-foreground mb-6">
+                      For academic institutions, nonprofit organizations, and
+                      research groups interested in contributing to open,
+                      non‑commercial AI research and educational initiatives.
+                    </p>
+                    <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
+                      <li>• Joint open research projects</li>
+                      <li>• Educational programs and knowledge sharing</li>
+                      <li>• Co‑hosted academic events and workshops</li>
+                      <li>• Community‑driven research collaboration</li>
+                    </ul>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4">
-                    Organizational Partnership
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    For institutions and companies wishing to collaborate on
-                    research, innovation, and AI advancement projects.
-                  </p>
-                  <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
-                    <li>• Joint research initiatives</li>
-                    <li>• Technology transfer programs</li>
-                    <li>• Co-hosted events and conferences</li>
-                    <li>• Shared resources and expertise</li>
-                  </ul>
+                  <Button
+                    className="w-full bg-gradient-primary hover:opacity-90"
+                    onClick={() => setFormType("organization")}
+                  >
+                    Get Involved as an Organization
+                  </Button>
                 </div>
-                <Button
-                  className="w-full bg-gradient-primary hover:opacity-90"
-                  onClick={() => setFormType("organization")}
-                >
-                  Apply as Organization
-                </Button>
-              </div>
 
-              {/* Scientific Board */}
-              <div className="bg-card border border-border rounded-2xl p-8 hover-lift flex flex-col">
-                <div className="flex flex-col flex-1">
-                  <div className="w-16 h-16 bg-gradient-secondary rounded-xl flex items-center justify-center mb-6">
-                    <Users className="text-white" size={32} />
+                {/* Scientific Board */}
+                <div className="bg-card border border-border rounded-2xl p-8 hover-lift flex flex-col">
+                  <div className="flex flex-col flex-1">
+                    <div className="w-16 h-16 bg-gradient-secondary rounded-xl flex items-center justify-center mb-6">
+                      <Users className="text-white" size={32} />
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-4">
+                      Scientific Board Membership
+                    </h3>
+                    <p className="text-muted-foreground mb-6">
+                      For experienced researchers and educators who wish to
+                      contribute voluntarily as advisors, reviewers, or members
+                      of the scientific advisory board.
+                    </p>
+                    <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
+                      <li>• Provide academic and ethical guidance</li>
+                      <li>• Review non‑commercial research proposals </li>
+                      <li>• Mentor students and early‑career researchers</li>
+                      <li>• Support responsible AI research initiatives</li>
+                    </ul>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4">
-                    Scientific Board Membership
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    For professionals who wish to join as voluntary advisors,
-                    reviewers, or scientific board members.
-                  </p>
-                  <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
-                    <li>• Guide strategic initiatives</li>
-                    <li>• Review research proposals</li>
-                    <li>• Mentor researchers and startups</li>
-                    <li>• Shape AI policy and standards</li>
-                  </ul>
+                  <Button
+                    className="w-full bg-gradient-secondary hover:opacity-90"
+                    onClick={() => setFormType("board")}
+                  >
+                    Get Involved as an Advisor
+                  </Button>
                 </div>
-                <Button
-                  className="w-full bg-gradient-secondary hover:opacity-90"
-                  onClick={() => setFormType("board")}
-                >
-                  Apply for Board
-                </Button>
-              </div>
 
-              {/* Volunteering */}
-              <div className="bg-card border border-border rounded-2xl p-8 hover-lift flex flex-col">
-                <div className="flex flex-col flex-1">
-                  <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mb-6">
-                    <Heart className="text-white" size={32} />
+                {/* Volunteering */}
+                <div className="bg-card border border-border rounded-2xl p-8 hover-lift flex flex-col">
+                  <div className="flex flex-col flex-1">
+                    <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mb-6">
+                      <Heart className="text-white" size={32} />
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-4">
+                      Volunteering Program
+                    </h3>
+                    <p className="text-muted-foreground mb-6">
+                      For individuals passionate about AI research, education,
+                      and community initiatives who want to contribute their
+                      time and skills.
+                    </p>
+                    <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
+                      <li>• Support research projects</li>
+                      <li>• Assist in organizing events</li>
+                      <li>• Content creation and outreach</li>
+                      <li>• Community engagement</li>
+                    </ul>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4">
-                    Volunteering Program
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    For individuals passionate about AI and global innovation
-                    who want to contribute their time and skills.
-                  </p>
-                  <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
-                    <li>• Support research projects</li>
-                    <li>• Assist in organizing events</li>
-                    <li>• Content creation and outreach</li>
-                    <li>• Community engagement</li>
-                  </ul>
+                  <Button
+                    className="w-full bg-gradient-accent hover:opacity-90"
+                    onClick={() => setFormType("volunteer")}
+                  >
+                    Apply to Volunteer
+                  </Button>
                 </div>
-                <Button
-                  className="w-full bg-gradient-accent hover:opacity-90"
-                  onClick={() => setFormType("volunteer")}
-                >
-                  Apply to Volunteer
-                </Button>
               </div>
-            </div>
+              <div className="max-w-4xl mx-auto mt-16">
+                <div className="p-6 border border-border rounded-xl bg-muted text-center">
+                  <h3 className="font-semibold mb-2">
+                    For Nonprofit Organizations and Institutions
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Organizations seeking information about Maple AI’s nonprofit
+                    participation and community acknowledgment framework can
+                    learn more on our{" "}
+                    <a
+                      href="/licensing"
+                      className="underline hover:text-foreground"
+                    >
+                      Licensing & Participation page
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+            </>
           ) : (
             <div className="max-w-2xl mx-auto">
               <Button
@@ -192,10 +217,10 @@ const Collaborate = () => {
               <div className="bg-card border border-border rounded-2xl p-8">
                 <h2 className="text-3xl font-bold mb-6">
                   {formType === "organization" &&
-                    "Organizational Partnership Application"}
+                    "Institutional & Community Collaboration Form"}
                   {formType === "board" &&
-                    "Scientific Board Membership Application"}
-                  {formType === "volunteer" && "Volunteer Program Application"}
+                    "Scientific Advisory Board Participation Form"}
+                  {formType === "volunteer" && "Volunteer Participation Form"}
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -273,7 +298,7 @@ const Collaborate = () => {
                     type="submit"
                     className="w-full bg-gradient-primary hover:opacity-90"
                   >
-                    Submit Application
+                    Send Information
                   </Button>
                 </form>
               </div>
@@ -287,4 +312,4 @@ const Collaborate = () => {
   );
 };
 
-export default Collaborate;
+export default GetInvolved;

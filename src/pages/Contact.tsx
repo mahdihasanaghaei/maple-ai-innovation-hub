@@ -83,7 +83,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-muted-foreground">
               Get in touch with our team. We're here to answer your questions
-              and explore collaboration opportunities.
+              and support community, research, and educational initiatives.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ const Contact = () => {
                   Canada
                   <br />
                   <span className="text-xs">
-                    Operating under Government of Canada supervision
+                    An independent, nonprofit organization based in Canada
                   </span>
                 </p>
               </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                 <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mb-4">
                   <Phone className="text-white" size={24} />
                 </div>
-                <h3 className="font-semibold mb-2">Phone</h3>
+                <h3 className="font-semibold mb-2">Community Inquiries</h3>
                 <a href="tel:+14376027860" className="text-muted-foreground">
                   +14376027860
                 </a>

@@ -22,8 +22,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              Shaping the future of AI through global collaboration and
-              scientific innovation.
+              Advancing artificial intelligence through open research,
+              education, and global collaboration in the public interest.
             </p>
             <div className="flex space-x-4">
               <Link
@@ -69,10 +69,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/partnerships"
+                  to="/supporters"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Partnerships
+                  Our Community
                 </Link>
               </li>
               <li>
@@ -92,10 +92,10 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/collaborate"
+                  to="/get-involved"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Collaborate
+                  Get Involved
                 </Link>
               </li>
               <li>
@@ -131,9 +131,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-muted-foreground">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>
-                  Canada (Operating under Government of Canada supervision)
-                </span>
+                <span>Canada (Independent nonprofit organization)</span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail size={16} className="flex-shrink-0" />
@@ -154,7 +152,8 @@ const Footer = () => {
             rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-2">
-            Operating under the supervision of the Government of Canada
+            An independent, nonprofit, research-focused organization based in
+            Canada
           </p>
         </div>
       </div>

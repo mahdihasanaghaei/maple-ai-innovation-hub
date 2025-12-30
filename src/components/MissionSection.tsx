@@ -5,23 +5,27 @@ const MissionSection = () => {
     {
       icon: Globe,
       title: "Global Collaboration",
-      description: "Connecting innovators, researchers, and institutions across continents to advance AI technology."
+      description:
+        "Connecting researchers, educators, and nonprofit institutions worldwide to advance open AI research.",
     },
     {
       icon: Users,
-      title: "Scientific Excellence",
-      description: "Bringing together the brightest minds to push the boundaries of artificial intelligence research."
+      title: "Research & Education",
+      description:
+        "Supporting rigorous research and educational initiatives that expand access to artificial intelligence knowledge.",
     },
     {
       icon: Lightbulb,
-      title: "Innovation First",
-      description: "Fostering groundbreaking ideas and transforming them into real-world solutions."
+      title: "Open Innovation",
+      description:
+        "Encouraging responsible and open innovation through community-driven research and experimentation.",
     },
     {
       icon: Award,
-      title: "Recognized Impact",
-      description: "Award-winning achievements in international invention competitions and AI innovation."
-    }
+      title: "Community Impact",
+      description:
+        "Enabling positive social impact through open research, education, and public-interest AI initiatives.",
+    },
   ];
 
   return (
@@ -33,16 +37,17 @@ const MissionSection = () => {
             Our <span className="text-gradient">Mission</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            The Maple AI Innovation Foundation connects science, innovation, and entrepreneurship 
-            on a global scale. We are dedicated to advancing artificial intelligence through 
-            collaborative research, nurturing startups, and fostering international partnerships.
+            The Maple AI Innovation Foundation connects science, education, and
+            open research on a global scale. We are dedicated to advancing
+            artificial intelligence through collaborative research initiatives,
+            knowledge sharing, and inclusive community participation.
           </p>
         </div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-card border border-border rounded-2xl p-6 hover-lift hover:border-primary/50 transition-all"
             >

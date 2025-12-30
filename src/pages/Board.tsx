@@ -17,8 +17,8 @@ const Board = () => {
               Scientific & <span className="text-gradient">Advisory Board</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Distinguished experts guiding our vision and advancing AI
-              innovation globally
+              Distinguished experts guiding our vision and advancing artificial
+              intelligence through research, education, and ethical leadership
             </p>
           </div>
 
@@ -68,13 +68,13 @@ const Board = () => {
           <section className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-primary/20 rounded-2xl p-12 text-center">
               <h2 className="text-3xl font-bold mb-4">
-                Join Our Scientific Board
+                Join Our Scientific Advisory Board
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                We are always looking for passionate AI researchers, innovators,
-                and thought leaders to join our voluntary scientific advisory
-                board. Share your expertise and help shape the future of AI
-                innovation.
+                We welcome experienced AI researchers, educators, and scholars
+                interested in contributing to our voluntary scientific advisory
+                board. Members support open research, ethical review, and
+                educational initiatives for public benefit.
               </p>
               <div className="space-y-4 mb-8 text-left max-w-2xl mx-auto">
                 <div className="flex items-start space-x-3">
@@ -82,7 +82,8 @@ const Board = () => {
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <p className="text-muted-foreground">
-                    Contribute to groundbreaking AI research and innovation
+                    Contribute to open and non‑commercial AI research
+                    initiatives
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -90,7 +91,7 @@ const Board = () => {
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <p className="text-muted-foreground">
-                    Network with global leaders in technology and science
+                    Engage with a global community of researchers and educators
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -98,16 +99,17 @@ const Board = () => {
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <p className="text-muted-foreground">
-                    Guide strategic initiatives and review cutting-edge projects
+                    Provide academic guidance and ethical review for research
+                    programs
                   </p>
                 </div>
               </div>
-              <Link to="/collaborate">
+              <Link to="/get-involved">
                 <Button
                   size="lg"
                   className="bg-gradient-primary hover:opacity-90"
                 >
-                  Apply to Join the Board
+                  Get Involved
                 </Button>
               </Link>
             </div>

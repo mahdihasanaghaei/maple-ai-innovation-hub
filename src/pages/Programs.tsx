@@ -11,7 +11,7 @@ const Programs = () => {
       location: "Virtual Event",
       icon: Globe,
       description:
-        "Join us for an exclusive online event exploring the intersection of AI and inventions. Learn from leading innovators and researchers about breakthrough AI applications in the invention space.",
+        "Join us for an exclusive online event exploring the intersection of AI and inventions. Learn from leading innovators and practitioners about breakthrough AI applications in the invention space.",
       highlights: [
         "Expert keynote speakers",
         "Live demonstrations",
@@ -25,7 +25,7 @@ const Programs = () => {
       location: "To be announced",
       icon: Users,
       description:
-        "Connect with the Maple AI community, share insights, and collaborate on groundbreaking AI projects. This event brings together researchers, entrepreneurs, and AI enthusiasts.",
+        "Connect with the Maple AI community, share insights, and collaborate on groundbreaking AI projects. This event brings together researchers, educators, students, and AI enthusiasts.",
       highlights: [
         "Community networking",
         "Project showcases",

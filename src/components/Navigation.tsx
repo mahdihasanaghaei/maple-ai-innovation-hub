@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { Button } from "./ui/button";
 import Logo from "/maple-Ai.png";
 
 const Navigation = () => {
@@ -12,10 +11,10 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/programs", label: "Programs & Events" },
-    { path: "/partnerships", label: "Partnerships" },
+    { path: "/resources", label: "Free Resources" },
+    { path: "/supporters", label: "Our Community" },
     { path: "/board", label: "Scientific Board" },
-    { path: "/collaborate", label: "Collaborate" },
-    { path: "/licensing", label: "Licensing" },
+    { path: "/get-involved", label: "Get Involved" },
     { path: "/awards", label: "Awards" },
     { path: "/contact", label: "Contact" },
   ];
