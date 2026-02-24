@@ -1,7 +1,7 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "/hero.png";
 
 const Hero = () => {
   return (
@@ -11,13 +11,13 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="AI Innovation"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-contain opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/30 to-background/50" />
       </div>
 
       {/* Animated Grid Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+      {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" /> */}
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
