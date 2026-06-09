@@ -43,15 +43,15 @@ const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12 animate-fade-in">
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
-            <div className="text-4xl font-bold text-gradient mb-2">2</div>
+            <div className="text-4xl font-bold text-gradient mb-2">10</div>
             <p className="text-muted-foreground">Open Research Projects</p>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
-            <div className="text-4xl font-bold text-gradient mb-2">3</div>
+            <div className="text-4xl font-bold text-gradient mb-2">12</div>
             <p className="text-muted-foreground">Educational AI Initiatives</p>
           </div>
           <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
-            <div className="text-4xl font-bold text-gradient mb-2">50+</div>
+            <div className="text-4xl font-bold text-gradient mb-2">100+</div>
             <p className="text-muted-foreground">
               Community Researchers & Volunteers
             </p>

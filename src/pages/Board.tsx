@@ -28,21 +28,21 @@ const Board = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <UserCheck className="text-white" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gradient mb-2">15+</div>
+              <div className="text-3xl font-bold text-gradient mb-2">30+</div>
               <p className="text-muted-foreground">Board Members</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Award className="text-white" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gradient mb-2">20+</div>
+              <div className="text-3xl font-bold text-gradient mb-2">30+</div>
               <p className="text-muted-foreground">Countries Represented</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="text-white" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gradient mb-2">100+</div>
+              <div className="text-3xl font-bold text-gradient mb-2">150+</div>
               <p className="text-muted-foreground">Research Publications</p>
             </div>
           </div>

@@ -8,28 +8,28 @@ const Supporters = () => {
     {
       icon: University,
       title: "Academic Institutions",
-      count: "15+",
+      count: "20+",
       description:
         "Universities and research centers collaborating on open and non‑commercial AI research",
     },
     {
       icon: Building2,
       title: "Nonprofit & Research Organizations",
-      count: "20+",
+      count: "30+",
       description:
         "Independent organizations supporting education, ethics, and public‑interest AI initiatives",
     },
     {
       icon: Rocket,
       title: "Community Initiatives",
-      count: "30+",
+      count: "40+",
       description:
         "Grassroots and community‑led projects focused on AI learning and knowledge sharing",
     },
     {
       icon: Globe,
       title: "International Networks",
-      count: "10+",
+      count: "40+",
       description:
         "Global academic and nonprofit networks advancing responsible AI collaboration",
     },
