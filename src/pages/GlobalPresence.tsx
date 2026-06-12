@@ -9,15 +9,17 @@ const GlobalPresenceSection = () => {
       flag: canadaFlag,
       country: "Canada",
       city: "Toronto",
+      address: "890 Mt Pleasant Rd, Toronto, ON M4P 2L4, Canada",
       description:
-        "Supporting research, education, and community engagement initiatives across Canada.",
+        "The Toronto branch serves as Maple Foundation's primary hub for activities across Canada and the United States, supporting research initiatives, educational programs, and strategic collaborations that foster innovation, knowledge exchange, and public engagement in the field of artificial intelligence.",
     },
     {
       flag: franceFlag,
       country: "France",
       city: "Paris",
+      address: "25 rue du fort 92320 chatillon ile de france",
       description:
-        "Advancing international collaboration and AI research throughout Europe.",
+        "The Paris branch coordinates partnerships with organizations, research institutions, and stakeholders throughout the European Union, promoting international collaboration, responsible AI development, and cross-border initiatives that contribute to scientific and social progress.",
     },
   ];
 
@@ -65,6 +67,10 @@ const GlobalPresenceSection = () => {
 
                 <p className="text-primary font-medium mb-4">
                   {branch.city} Branch
+                </p>
+
+                <p className=" leading-relaxed mb-4 ">
+                  Address: {branch.address}
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
