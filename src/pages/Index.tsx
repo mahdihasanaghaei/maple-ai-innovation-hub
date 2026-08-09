@@ -4,12 +4,14 @@ import Hero from "@/components/Hero";
 import MissionSection from "@/components/MissionSection";
 import AboutSection from "@/components/AboutSection";
 import GlobalPresenceSection from "./GlobalPresence";
+import MapleAwardsSection from "@/components/MapleAward";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <MapleAwardsSection />
       <GlobalPresenceSection />
       <MissionSection />
       <AboutSection />
